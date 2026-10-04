@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="digdug_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="digdug_sim" />
+            <top_module name="glbl" />
+            <top_module name="vga_control_pack" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="22,061,356.111 ns"></ZoomStartTime>
+      <ZoomEndTime time="22,069,326.112 ns"></ZoomEndTime>
+      <Cursor1Time time="22,062,689.444 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="176"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="26" />
+   <wave_markers>
+      <marker time="19500300555" label="" />
+      <marker time="19441692777" label="" />
+      <marker time="22126856111" label="" />
+   </wave_markers>
+   <wvobject fp_name="/digdug_sim/core_top_0/i_rst_sysn" type="logic">
+      <obj_property name="ElementShortName">i_rst_sysn</obj_property>
+      <obj_property name="ObjectShortName">i_rst_sysn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digdug_sim/core_top_0/i_clk_artyx7" type="logic">
+      <obj_property name="ElementShortName">i_clk_artyx7</obj_property>
+      <obj_property name="ObjectShortName">i_clk_artyx7</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digdug_sim/core_top_0/core_rst_n" type="logic">
+      <obj_property name="ElementShortName">core_rst_n</obj_property>
+      <obj_property name="ObjectShortName">core_rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digdug_sim/core_top_0/digdug_clk_3x" type="logic">
+      <obj_property name="ElementShortName">digdug_clk_3x</obj_property>
+      <obj_property name="ObjectShortName">digdug_clk_3x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digdug_sim/core_top_0/digdug_clk" type="logic">
+      <obj_property name="ElementShortName">digdug_clk</obj_property>
+      <obj_property name="ObjectShortName">digdug_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digdug_sim/core_top_0/blank_vga" type="logic">
+      <obj_property name="ElementShortName">blank_vga</obj_property>
+      <obj_property name="ObjectShortName">blank_vga</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digdug_sim/core_top_0/o_hsync" type="logic">
+      <obj_property name="ElementShortName">o_hsync</obj_property>
+      <obj_property name="ObjectShortName">o_hsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digdug_sim/core_top_0/o_vsync" type="logic">
+      <obj_property name="ElementShortName">o_vsync</obj_property>
+      <obj_property name="ObjectShortName">o_vsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digdug_sim/core_top_0/o_r_vga" type="array">
+      <obj_property name="ElementShortName">o_r_vga[2:0]</obj_property>
+      <obj_property name="ObjectShortName">o_r_vga[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digdug_sim/core_top_0/o_g_vga" type="array">
+      <obj_property name="ElementShortName">o_g_vga[2:0]</obj_property>
+      <obj_property name="ObjectShortName">o_g_vga[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digdug_sim/core_top_0/o_b_vga" type="array">
+      <obj_property name="ElementShortName">o_b_vga[2:0]</obj_property>
+      <obj_property name="ObjectShortName">o_b_vga[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digdug_sim/core_top_0/pll_locked" type="logic">
+      <obj_property name="ElementShortName">pll_locked</obj_property>
+      <obj_property name="ObjectShortName">pll_locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digdug_sim/core_top_0/core_vblk" type="logic">
+      <obj_property name="ElementShortName">core_vblk</obj_property>
+      <obj_property name="ObjectShortName">core_vblk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digdug_sim/core_top_0/core_hblk" type="logic">
+      <obj_property name="ElementShortName">core_hblk</obj_property>
+      <obj_property name="ObjectShortName">core_hblk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digdug_sim/core_top_0/vga_control_init_done" type="logic">
+      <obj_property name="ElementShortName">vga_control_init_done</obj_property>
+      <obj_property name="ObjectShortName">vga_control_init_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digdug_sim/core_top_0/rgb_core" type="array">
+      <obj_property name="ElementShortName">rgb_core[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb_core[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digdug_sim/core_top_0/pll_locked_n" type="logic">
+      <obj_property name="ElementShortName">pll_locked_n</obj_property>
+      <obj_property name="ObjectShortName">pll_locked_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="group457" type="group">
+      <obj_property name="label">core_top</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/i_clk" type="logic">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/i_clk_3x" type="logic">
+         <obj_property name="ElementShortName">i_clk_3x</obj_property>
+         <obj_property name="ObjectShortName">i_clk_3x</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/i_core_rst_n" type="logic">
+         <obj_property name="ElementShortName">i_core_rst_n</obj_property>
+         <obj_property name="ObjectShortName">i_core_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/o_hblank_core" type="logic">
+         <obj_property name="ElementShortName">o_hblank_core</obj_property>
+         <obj_property name="ObjectShortName">o_hblank_core</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/o_vblank_core" type="logic">
+         <obj_property name="ElementShortName">o_vblank_core</obj_property>
+         <obj_property name="ObjectShortName">o_vblank_core</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/h256_n" type="logic">
+         <obj_property name="ElementShortName">h256_n</obj_property>
+         <obj_property name="ObjectShortName">h256_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/h256" type="logic">
+         <obj_property name="ElementShortName">h256</obj_property>
+         <obj_property name="ObjectShortName">h256</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hsync" type="logic">
+         <obj_property name="ElementShortName">hsync</obj_property>
+         <obj_property name="ObjectShortName">hsync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hsync_n" type="logic">
+         <obj_property name="ElementShortName">hsync_n</obj_property>
+         <obj_property name="ObjectShortName">hsync_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/vsync_n" type="logic">
+         <obj_property name="ElementShortName">vsync_n</obj_property>
+         <obj_property name="ObjectShortName">vsync_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hflip_star" type="logic">
+         <obj_property name="ElementShortName">hflip_star</obj_property>
+         <obj_property name="ObjectShortName">hflip_star</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/vflip_star" type="logic">
+         <obj_property name="ElementShortName">vflip_star</obj_property>
+         <obj_property name="ObjectShortName">vflip_star</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/flip_0" type="logic">
+         <obj_property name="ElementShortName">flip_0</obj_property>
+         <obj_property name="ObjectShortName">flip_0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/flip_1" type="logic">
+         <obj_property name="ElementShortName">flip_1</obj_property>
+         <obj_property name="ObjectShortName">flip_1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/flip_2" type="logic">
+         <obj_property name="ElementShortName">flip_2</obj_property>
+         <obj_property name="ObjectShortName">flip_2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/vset_n" type="logic">
+         <obj_property name="ElementShortName">vset_n</obj_property>
+         <obj_property name="ObjectShortName">vset_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/shift_load_n" type="logic">
+         <obj_property name="ElementShortName">shift_load_n</obj_property>
+         <obj_property name="ObjectShortName">shift_load_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/mobj_on" type="logic">
+         <obj_property name="ElementShortName">mobj_on</obj_property>
+         <obj_property name="ObjectShortName">mobj_on</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/vblank" type="logic">
+         <obj_property name="ElementShortName">vblank</obj_property>
+         <obj_property name="ObjectShortName">vblank</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/csync" type="logic">
+         <obj_property name="ElementShortName">csync</obj_property>
+         <obj_property name="ObjectShortName">csync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hblk_n" type="logic">
+         <obj_property name="ElementShortName">hblk_n</obj_property>
+         <obj_property name="ObjectShortName">hblk_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/flip" type="logic">
+         <obj_property name="ElementShortName">flip</obj_property>
+         <obj_property name="ObjectShortName">flip</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/cmpblk" type="logic">
+         <obj_property name="ElementShortName">cmpblk</obj_property>
+         <obj_property name="ObjectShortName">cmpblk</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hblank" type="logic">
+         <obj_property name="ElementShortName">hblank</obj_property>
+         <obj_property name="ObjectShortName">hblank</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hpos_1_star_n" type="logic">
+         <obj_property name="ElementShortName">hpos_1_star_n</obj_property>
+         <obj_property name="ObjectShortName">hpos_1_star_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hpos" type="array">
+         <obj_property name="ElementShortName">hpos[8:0]</obj_property>
+         <obj_property name="ObjectShortName">hpos[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/vpos" type="array">
+         <obj_property name="ElementShortName">vpos[8:0]</obj_property>
+         <obj_property name="ObjectShortName">vpos[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/pod" type="array">
+         <obj_property name="ElementShortName">pod[7:0]</obj_property>
+         <obj_property name="ObjectShortName">pod[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/bgram_out" type="array">
+         <obj_property name="ElementShortName">bgram_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">bgram_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sptile_num" type="array">
+         <obj_property name="ElementShortName">sptile_num[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sptile_num[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/vram_addr" type="array">
+         <obj_property name="ElementShortName">vram_addr[10:0]</obj_property>
+         <obj_property name="ObjectShortName">vram_addr[10:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/spvcnt" type="array">
+         <obj_property name="ElementShortName">spvcnt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">spvcnt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/mobj" type="array">
+         <obj_property name="ElementShortName">mobj[3:0]</obj_property>
+         <obj_property name="ObjectShortName">mobj[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/pf" type="array">
+         <obj_property name="ElementShortName">pf[3:0]</obj_property>
+         <obj_property name="ObjectShortName">pf[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/final_color" type="array">
+         <obj_property name="ElementShortName">final_color[3:0]</obj_property>
+         <obj_property name="ObjectShortName">final_color[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/final_color_reg" type="array">
+         <obj_property name="ElementShortName">final_color_reg[5:0]</obj_property>
+         <obj_property name="ObjectShortName">final_color_reg[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/final_color_sel" type="array">
+         <obj_property name="ElementShortName">final_color_sel[3:0]</obj_property>
+         <obj_property name="ObjectShortName">final_color_sel[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/final_rgb" type="array">
+         <obj_property name="ElementShortName">final_rgb[7:0]</obj_property>
+         <obj_property name="ObjectShortName">final_rgb[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/msc" type="array">
+         <obj_property name="ElementShortName">msc[1:0]</obj_property>
+         <obj_property name="ObjectShortName">msc[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/psc" type="array">
+         <obj_property name="ElementShortName">psc[1:0]</obj_property>
+         <obj_property name="ObjectShortName">psc[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group5" type="group">
+      <obj_property name="label">digdug_clocks</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_clk_gen/i_clk_3x" type="logic">
+         <obj_property name="ElementShortName">i_clk_3x</obj_property>
+         <obj_property name="ObjectShortName">i_clk_3x</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_clk_gen/i_rst_sysn" type="logic">
+         <obj_property name="ElementShortName">i_rst_sysn</obj_property>
+         <obj_property name="ObjectShortName">i_rst_sysn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_clk_gen/o_clk_digdug" type="logic">
+         <obj_property name="ElementShortName">o_clk_digdug</obj_property>
+         <obj_property name="ObjectShortName">o_clk_digdug</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_clk_gen/J" type="array">
+         <obj_property name="ElementShortName">J[1:0]</obj_property>
+         <obj_property name="ObjectShortName">J[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_clk_gen/K" type="array">
+         <obj_property name="ElementShortName">K[1:0]</obj_property>
+         <obj_property name="ObjectShortName">K[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_clk_gen/Q" type="array">
+         <obj_property name="ElementShortName">Q[1:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_clk_gen/Qn" type="array">
+         <obj_property name="ElementShortName">Qn[1:0]</obj_property>
+         <obj_property name="ObjectShortName">Qn[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group514" type="group">
+      <obj_property name="label">Video output</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/cmpblk" type="logic">
+         <obj_property name="ElementShortName">cmpblk</obj_property>
+         <obj_property name="ObjectShortName">cmpblk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/mobj_on" type="logic">
+         <obj_property name="ElementShortName">mobj_on</obj_property>
+         <obj_property name="ObjectShortName">mobj_on</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/mobj" type="array">
+         <obj_property name="ElementShortName">mobj[3:0]</obj_property>
+         <obj_property name="ObjectShortName">mobj[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/final_color_sel" type="array">
+         <obj_property name="ElementShortName">final_color_sel[3:0]</obj_property>
+         <obj_property name="ObjectShortName">final_color_sel[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/final_color" type="array">
+         <obj_property name="ElementShortName">final_color[3:0]</obj_property>
+         <obj_property name="ObjectShortName">final_color[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/final_color_reg" type="array">
+         <obj_property name="ElementShortName">final_color_reg[5:0]</obj_property>
+         <obj_property name="ObjectShortName">final_color_reg[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/final_rgb" type="array">
+         <obj_property name="ElementShortName">final_rgb[7:0]</obj_property>
+         <obj_property name="ObjectShortName">final_rgb[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group4" type="group">
+      <obj_property name="label">hv_clocks</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/i_clk" type="logic">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/i_reset_n" type="logic">
+         <obj_property name="ElementShortName">i_reset_n</obj_property>
+         <obj_property name="ObjectShortName">i_reset_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/o_hcnt" type="array">
+         <obj_property name="ElementShortName">o_hcnt[8:0]</obj_property>
+         <obj_property name="ObjectShortName">o_hcnt[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/o_h256n" type="logic">
+         <obj_property name="ElementShortName">o_h256n</obj_property>
+         <obj_property name="ObjectShortName">o_h256n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/o_vcnt" type="array">
+         <obj_property name="ElementShortName">o_vcnt[8:0]</obj_property>
+         <obj_property name="ObjectShortName">o_vcnt[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/o_hsync" type="logic">
+         <obj_property name="ElementShortName">o_hsync</obj_property>
+         <obj_property name="ObjectShortName">o_hsync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/o_vsync" type="logic">
+         <obj_property name="ElementShortName">o_vsync</obj_property>
+         <obj_property name="ObjectShortName">o_vsync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/o_vblank" type="logic">
+         <obj_property name="ElementShortName">o_vblank</obj_property>
+         <obj_property name="ObjectShortName">o_vblank</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/o_csync" type="logic">
+         <obj_property name="ElementShortName">o_csync</obj_property>
+         <obj_property name="ObjectShortName">o_csync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/o_hblank_n" type="logic">
+         <obj_property name="ElementShortName">o_hblank_n</obj_property>
+         <obj_property name="ObjectShortName">o_hblank_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/ff0h_q" type="logic">
+         <obj_property name="ElementShortName">ff0h_q</obj_property>
+         <obj_property name="ObjectShortName">ff0h_q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/ff0h_qn" type="logic">
+         <obj_property name="ElementShortName">ff0h_qn</obj_property>
+         <obj_property name="ObjectShortName">ff0h_qn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/c1h_tc" type="logic">
+         <obj_property name="ElementShortName">c1h_tc</obj_property>
+         <obj_property name="ObjectShortName">c1h_tc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/c2h_tc" type="logic">
+         <obj_property name="ElementShortName">c2h_tc</obj_property>
+         <obj_property name="ObjectShortName">c2h_tc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/c1v_tc" type="logic">
+         <obj_property name="ElementShortName">c1v_tc</obj_property>
+         <obj_property name="ObjectShortName">c1v_tc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/c2v_tc" type="logic">
+         <obj_property name="ElementShortName">c2v_tc</obj_property>
+         <obj_property name="ObjectShortName">c2v_tc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/hsync" type="logic">
+         <obj_property name="ElementShortName">hsync</obj_property>
+         <obj_property name="ObjectShortName">hsync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/vsync" type="logic">
+         <obj_property name="ElementShortName">vsync</obj_property>
+         <obj_property name="ObjectShortName">vsync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/vsyncn" type="logic">
+         <obj_property name="ElementShortName">vsyncn</obj_property>
+         <obj_property name="ObjectShortName">vsyncn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/ff0v_q" type="logic">
+         <obj_property name="ElementShortName">ff0v_q</obj_property>
+         <obj_property name="ObjectShortName">ff0v_q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/ff0v_qn" type="logic">
+         <obj_property name="ElementShortName">ff0v_qn</obj_property>
+         <obj_property name="ObjectShortName">ff0v_qn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/h256n" type="logic">
+         <obj_property name="ElementShortName">h256n</obj_property>
+         <obj_property name="ObjectShortName">h256n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/hsyncn" type="logic">
+         <obj_property name="ElementShortName">hsyncn</obj_property>
+         <obj_property name="ObjectShortName">hsyncn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/hblank" type="logic">
+         <obj_property name="ElementShortName">hblank</obj_property>
+         <obj_property name="ObjectShortName">hblank</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/hblank_n" type="logic">
+         <obj_property name="ElementShortName">hblank_n</obj_property>
+         <obj_property name="ObjectShortName">hblank_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/vblank" type="logic">
+         <obj_property name="ElementShortName">vblank</obj_property>
+         <obj_property name="ObjectShortName">vblank</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/vblank_n" type="logic">
+         <obj_property name="ElementShortName">vblank_n</obj_property>
+         <obj_property name="ObjectShortName">vblank_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/hcnt" type="array">
+         <obj_property name="ElementShortName">hcnt[8:0]</obj_property>
+         <obj_property name="ObjectShortName">hcnt[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/hv_clocks/vcnt" type="array">
+         <obj_property name="ElementShortName">vcnt[8:0]</obj_property>
+         <obj_property name="ObjectShortName">vcnt[8:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group39" type="group">
+      <obj_property name="label">vram_addresser</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/vram_addr_gen/i_h" type="array">
+         <obj_property name="ElementShortName">i_h[8:0]</obj_property>
+         <obj_property name="ObjectShortName">i_h[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/vram_addr_gen/i_h256n" type="logic">
+         <obj_property name="ElementShortName">i_h256n</obj_property>
+         <obj_property name="ObjectShortName">i_h256n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/vram_addr_gen/i_flip" type="logic">
+         <obj_property name="ElementShortName">i_flip</obj_property>
+         <obj_property name="ObjectShortName">i_flip</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/vram_addr_gen/i_v" type="array">
+         <obj_property name="ElementShortName">i_v[8:0]</obj_property>
+         <obj_property name="ObjectShortName">i_v[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/vram_addr_gen/o_ab" type="array">
+         <obj_property name="ElementShortName">o_ab[10:0]</obj_property>
+         <obj_property name="ObjectShortName">o_ab[10:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/vram_addr_gen/ph" type="array">
+         <obj_property name="ElementShortName">ph[8:0]</obj_property>
+         <obj_property name="ObjectShortName">ph[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/vram_addr_gen/pv" type="array">
+         <obj_property name="ElementShortName">pv[8:0]</obj_property>
+         <obj_property name="ObjectShortName">pv[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/vram_addr_gen/f" type="array">
+         <obj_property name="ElementShortName">f[7:3]</obj_property>
+         <obj_property name="ObjectShortName">f[7:3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/vram_addr_gen/vp" type="array">
+         <obj_property name="ElementShortName">vp[7:3]</obj_property>
+         <obj_property name="ObjectShortName">vp[7:3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/vram_addr_gen/hp" type="array">
+         <obj_property name="ElementShortName">hp[7:3]</obj_property>
+         <obj_property name="ObjectShortName">hp[7:3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/vram_addr_gen/sel" type="logic">
+         <obj_property name="ElementShortName">sel</obj_property>
+         <obj_property name="ObjectShortName">sel</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/vram_addr_gen/y157" type="array">
+         <obj_property name="ElementShortName">y157[11:0]</obj_property>
+         <obj_property name="ObjectShortName">y157[11:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group50" type="group">
+      <obj_property name="label">pf_gen</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_clk" type="logic">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_reset_n" type="logic">
+         <obj_property name="ElementShortName">i_reset_n</obj_property>
+         <obj_property name="ObjectShortName">i_reset_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_pa" type="array">
+         <obj_property name="ElementShortName">i_pa[10:0]</obj_property>
+         <obj_property name="ObjectShortName">i_pa[10:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_dbin" type="array">
+         <obj_property name="ElementShortName">i_dbin[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_dbin[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_psc" type="array">
+         <obj_property name="ElementShortName">i_psc[1:0]</obj_property>
+         <obj_property name="ObjectShortName">i_psc[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/o_dbout" type="array">
+         <obj_property name="ElementShortName">o_dbout[7:0]</obj_property>
+         <obj_property name="ObjectShortName">o_dbout[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/o_pod" type="array">
+         <obj_property name="ElementShortName">o_pod[7:0]</obj_property>
+         <obj_property name="ObjectShortName">o_pod[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/o_flip" type="logic">
+         <obj_property name="ElementShortName">o_flip</obj_property>
+         <obj_property name="ObjectShortName">o_flip</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/o_pf" type="array">
+         <obj_property name="ElementShortName">o_pf[3:0]</obj_property>
+         <obj_property name="ObjectShortName">o_pf[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_hpos" type="array">
+         <obj_property name="ElementShortName">i_hpos[8:0]</obj_property>
+         <obj_property name="ObjectShortName">i_hpos[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_vpos" type="array">
+         <obj_property name="ElementShortName">i_vpos[8:0]</obj_property>
+         <obj_property name="ObjectShortName">i_vpos[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_hpos[1]" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+         <obj_property name="label">2H</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_hpos[2]" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+         <obj_property name="label">4H</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_ram0_csn" type="logic">
+         <obj_property name="ElementShortName">i_ram0_csn</obj_property>
+         <obj_property name="ObjectShortName">i_ram0_csn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_br_wn" type="logic">
+         <obj_property name="ElementShortName">i_br_wn</obj_property>
+         <obj_property name="ObjectShortName">i_br_wn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_portn" type="logic">
+         <obj_property name="ElementShortName">i_portn</obj_property>
+         <obj_property name="ObjectShortName">i_portn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/bg_cutoff" type="logic">
+         <obj_property name="ElementShortName">bg_cutoff</obj_property>
+         <obj_property name="ObjectShortName">bg_cutoff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/flip" type="logic">
+         <obj_property name="ElementShortName">flip</obj_property>
+         <obj_property name="ObjectShortName">flip</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/bg_color_bank" type="array">
+         <obj_property name="ElementShortName">bg_color_bank[1:0]</obj_property>
+         <obj_property name="ObjectShortName">bg_color_bank[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/bg_select" type="array">
+         <obj_property name="ElementShortName">bg_select[1:0]</obj_property>
+         <obj_property name="ObjectShortName">bg_select[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/bg_data" type="array">
+         <obj_property name="ElementShortName">bg_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">bg_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/dout_9M" type="array">
+         <obj_property name="ElementShortName">dout_9M[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dout_9M[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/q_9r" type="array">
+         <obj_property name="ElementShortName">q_9r[7:0]</obj_property>
+         <obj_property name="ObjectShortName">q_9r[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/U10CD/a" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">a[11:0]</obj_property>
+         <obj_property name="ObjectShortName">a[11:0]</obj_property>
+         <obj_property name="label">u10cd_a[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/U10CD/spo" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">spo[7:0]</obj_property>
+         <obj_property name="ObjectShortName">spo[7:0]</obj_property>
+         <obj_property name="label">u10cd_spo[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/q_10lm" type="array">
+         <obj_property name="ElementShortName">q_10lm[3:0]</obj_property>
+         <obj_property name="ObjectShortName">q_10lm[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/U10KL/a" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">a[7:0]</obj_property>
+         <obj_property name="ObjectShortName">a[7:0]</obj_property>
+         <obj_property name="label">a_pf_10kl</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/pf_10kl" type="array">
+         <obj_property name="ElementShortName">pf_10kl[3:0]</obj_property>
+         <obj_property name="ObjectShortName">pf_10kl[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/q_10r" type="array">
+         <obj_property name="ElementShortName">q_10r[3:0]</obj_property>
+         <obj_property name="ObjectShortName">q_10r[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/Q_5MN" type="array">
+         <obj_property name="ElementShortName">Q_5MN[7:0]</obj_property>
+         <obj_property name="ObjectShortName">Q_5MN[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/fg_color_mode" type="logic">
+         <obj_property name="ElementShortName">fg_color_mode</obj_property>
+         <obj_property name="ObjectShortName">fg_color_mode</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/shift_reg_8n[7]" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+         <obj_property name="label">tile_or_bg</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/shift_reg_8n" type="array">
+         <obj_property name="ElementShortName">shift_reg_8n[7:0]</obj_property>
+         <obj_property name="ObjectShortName">shift_reg_8n[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/q_10mn" type="array">
+         <obj_property name="ElementShortName">q_10mn[7:0]</obj_property>
+         <obj_property name="ObjectShortName">q_10mn[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/U8R/a" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">a[10:0]</obj_property>
+         <obj_property name="ObjectShortName">a[10:0]</obj_property>
+         <obj_property name="label">addr_8r[10:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/dout_8r" type="array">
+         <obj_property name="ElementShortName">dout_8r[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dout_8r[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group82" type="group">
+      <obj_property name="label">sprites_gen</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="group187" type="group">
+         <obj_property name="label">custom04</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/i_rst_n" type="logic">
+            <obj_property name="ElementShortName">i_rst_n</obj_property>
+            <obj_property name="ObjectShortName">i_rst_n</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/i_clk" type="logic">
+            <obj_property name="ElementShortName">i_clk</obj_property>
+            <obj_property name="ObjectShortName">i_clk</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/i_ab" type="array">
+            <obj_property name="ElementShortName">i_ab[6:0]</obj_property>
+            <obj_property name="ObjectShortName">i_ab[6:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/i_match_n" type="logic">
+            <obj_property name="ElementShortName">i_match_n</obj_property>
+            <obj_property name="ObjectShortName">i_match_n</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/i_hpos" type="array">
+            <obj_property name="ElementShortName">i_hpos[8:0]</obj_property>
+            <obj_property name="ObjectShortName">i_hpos[8:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/i_256h" type="logic">
+            <obj_property name="ElementShortName">i_256h</obj_property>
+            <obj_property name="ObjectShortName">i_256h</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/i_size" type="logic">
+            <obj_property name="ElementShortName">i_size</obj_property>
+            <obj_property name="ObjectShortName">i_size</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/o_mora" type="array">
+            <obj_property name="ElementShortName">o_mora[6:0]</obj_property>
+            <obj_property name="ObjectShortName">o_mora[6:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/vset_n" type="logic">
+            <obj_property name="ElementShortName">vset_n</obj_property>
+            <obj_property name="ObjectShortName">vset_n</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/o_vset_n" type="logic">
+            <obj_property name="ElementShortName">o_vset_n</obj_property>
+            <obj_property name="ObjectShortName">o_vset_n</obj_property>
+            <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/hset_n" type="logic">
+            <obj_property name="ElementShortName">hset_n</obj_property>
+            <obj_property name="ObjectShortName">hset_n</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/o_hset_n" type="logic">
+            <obj_property name="ElementShortName">o_hset_n</obj_property>
+            <obj_property name="ObjectShortName">o_hset_n</obj_property>
+            <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/o_obj" type="logic">
+            <obj_property name="ElementShortName">o_obj</obj_property>
+            <obj_property name="ObjectShortName">o_obj</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/o_flip" type="array">
+            <obj_property name="ElementShortName">o_flip[2:0]</obj_property>
+            <obj_property name="ObjectShortName">o_flip[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/sprite_state" type="other">
+            <obj_property name="ElementShortName">sprite_state</obj_property>
+            <obj_property name="ObjectShortName">sprite_state</obj_property>
+            <obj_property name="CustomSignalColor">#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/slot" type="array">
+            <obj_property name="ElementShortName">slot[2:0]</obj_property>
+            <obj_property name="ObjectShortName">slot[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/hset_n" type="logic">
+            <obj_property name="ElementShortName">hset_n</obj_property>
+            <obj_property name="ObjectShortName">hset_n</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/sprite_size" type="logic">
+            <obj_property name="ElementShortName">sprite_size</obj_property>
+            <obj_property name="ObjectShortName">sprite_size</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/i_hpos[1]" type="logic">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">[1]</obj_property>
+            <obj_property name="ObjectShortName">[1]</obj_property>
+            <obj_property name="label">2H</obj_property>
+            <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/cpu_access_n" type="logic">
+            <obj_property name="ElementShortName">cpu_access_n</obj_property>
+            <obj_property name="ObjectShortName">cpu_access_n</obj_property>
+            <obj_property name="CustomSignalColor">#00FF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/cpu_access_t1_n" type="logic">
+            <obj_property name="ElementShortName">cpu_access_t1_n</obj_property>
+            <obj_property name="ObjectShortName">cpu_access_t1_n</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/cpu_access_t2_n" type="logic">
+            <obj_property name="ElementShortName">cpu_access_t2_n</obj_property>
+            <obj_property name="ObjectShortName">cpu_access_t2_n</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/sprite_num" type="array">
+            <obj_property name="ElementShortName">sprite_num[5:0]</obj_property>
+            <obj_property name="ObjectShortName">sprite_num[5:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/sphcnt" type="array">
+            <obj_property name="ElementShortName">sphcnt[4:0]</obj_property>
+            <obj_property name="ObjectShortName">sphcnt[4:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/flipcnt" type="array">
+            <obj_property name="ElementShortName">flipcnt[4:0]</obj_property>
+            <obj_property name="ObjectShortName">flipcnt[4:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/PH_ABORT" type="array">
+            <obj_property name="ElementShortName">PH_ABORT[8:0]</obj_property>
+            <obj_property name="ObjectShortName">PH_ABORT[8:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_rst_n" type="logic">
+         <obj_property name="ElementShortName">i_rst_n</obj_property>
+         <obj_property name="ObjectShortName">i_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/i_clk_3x" type="logic">
+         <obj_property name="ElementShortName">i_clk_3x</obj_property>
+         <obj_property name="ObjectShortName">i_clk_3x</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_clk" type="logic">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_shift_load_n" type="logic">
+         <obj_property name="ElementShortName">i_shift_load_n</obj_property>
+         <obj_property name="ObjectShortName">i_shift_load_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/i_ab" type="array">
+         <obj_property name="ElementShortName">i_ab[15:0]</obj_property>
+         <obj_property name="ObjectShortName">i_ab[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_flip" type="logic">
+         <obj_property name="ElementShortName">i_flip</obj_property>
+         <obj_property name="ObjectShortName">i_flip</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_flip_0" type="logic">
+         <obj_property name="ElementShortName">i_flip_0</obj_property>
+         <obj_property name="ObjectShortName">i_flip_0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_flip_1" type="logic">
+         <obj_property name="ElementShortName">i_flip_1</obj_property>
+         <obj_property name="ObjectShortName">i_flip_1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_flip_2" type="logic">
+         <obj_property name="ElementShortName">i_flip_2</obj_property>
+         <obj_property name="ObjectShortName">i_flip_2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/i_hsync_n" type="logic">
+         <obj_property name="ElementShortName">i_hsync_n</obj_property>
+         <obj_property name="ObjectShortName">i_hsync_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/i_256h" type="logic">
+         <obj_property name="ElementShortName">i_256h</obj_property>
+         <obj_property name="ObjectShortName">i_256h</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/i_h" type="array">
+         <obj_property name="ElementShortName">i_h[8:0]</obj_property>
+         <obj_property name="ObjectShortName">i_h[8:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/i_v" type="array">
+         <obj_property name="ElementShortName">i_v[8:0]</obj_property>
+         <obj_property name="ObjectShortName">i_v[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_hflip_star" type="logic">
+         <obj_property name="ElementShortName">i_hflip_star</obj_property>
+         <obj_property name="ObjectShortName">i_hflip_star</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_vflip_star" type="logic">
+         <obj_property name="ElementShortName">i_vflip_star</obj_property>
+         <obj_property name="ObjectShortName">i_vflip_star</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/i_msc" type="array">
+         <obj_property name="ElementShortName">i_msc[1:0]</obj_property>
+         <obj_property name="ObjectShortName">i_msc[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_spvcnt" type="array">
+         <obj_property name="ElementShortName">i_spvcnt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">i_spvcnt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_vset_n" type="logic">
+         <obj_property name="ElementShortName">i_vset_n</obj_property>
+         <obj_property name="ObjectShortName">i_vset_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/o_mobj" type="array">
+         <obj_property name="ElementShortName">o_mobj[3:0]</obj_property>
+         <obj_property name="ObjectShortName">o_mobj[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/o_sptile_num" type="array">
+         <obj_property name="ElementShortName">o_sptile_num[7:0]</obj_property>
+         <obj_property name="ObjectShortName">o_sptile_num[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/o_msc" type="array">
+         <obj_property name="ElementShortName">o_msc[1:0]</obj_property>
+         <obj_property name="ObjectShortName">o_msc[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/o_psc" type="array">
+         <obj_property name="ElementShortName">o_psc[1:0]</obj_property>
+         <obj_property name="ObjectShortName">o_psc[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/sptile_color" type="array">
+         <obj_property name="ElementShortName">sptile_color[5:0]</obj_property>
+         <obj_property name="ObjectShortName">sptile_color[5:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/sprite_line" type="array">
+         <obj_property name="ElementShortName">sprite_line[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sprite_line[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/match_n" type="logic">
+         <obj_property name="ElementShortName">match_n</obj_property>
+         <obj_property name="ObjectShortName">match_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/mora_cus_04" type="array">
+         <obj_property name="ElementShortName">mora_cus_04[6:0]</obj_property>
+         <obj_property name="ObjectShortName">mora_cus_04[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/mora" type="array">
+         <obj_property name="ElementShortName">mora[9:0]</obj_property>
+         <obj_property name="ObjectShortName">mora[9:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/objram_di" type="array">
+         <obj_property name="ElementShortName">objram_di[7:0]</obj_property>
+         <obj_property name="ObjectShortName">objram_di[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/objram_do" type="array">
+         <obj_property name="ElementShortName">objram_do[7:0]</obj_property>
+         <obj_property name="ObjectShortName">objram_do[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/posram_di" type="array">
+         <obj_property name="ElementShortName">posram_di[7:0]</obj_property>
+         <obj_property name="ObjectShortName">posram_di[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/posram_do" type="array">
+         <obj_property name="ElementShortName">posram_do[7:0]</obj_property>
+         <obj_property name="ObjectShortName">posram_do[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/flpram_di" type="array">
+         <obj_property name="ElementShortName">flpram_di[7:0]</obj_property>
+         <obj_property name="ObjectShortName">flpram_di[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/flpram_do" type="array">
+         <obj_property name="ElementShortName">flpram_do[7:0]</obj_property>
+         <obj_property name="ObjectShortName">flpram_do[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="vbus989" type="vbus">
+         <obj_property name="label">u4g_addr</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/sptile_color" type="array">
+            <obj_property name="ElementShortName">sptile_color[5:0]</obj_property>
+            <obj_property name="ObjectShortName">sptile_color[5:0]</obj_property>
+            <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/i_msc" type="array">
+            <obj_property name="ElementShortName">i_msc[1:0]</obj_property>
+            <obj_property name="ObjectShortName">i_msc[1:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/u4g_do" type="array">
+         <obj_property name="ElementShortName">u4g_do[3:0]</obj_property>
+         <obj_property name="ObjectShortName">u4g_do[3:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/obj" type="logic">
+         <obj_property name="ElementShortName">obj</obj_property>
+         <obj_property name="ObjectShortName">obj</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/line_buffer_wr" type="logic">
+         <obj_property name="ElementShortName">line_buffer_wr</obj_property>
+         <obj_property name="ObjectShortName">line_buffer_wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/hset_n" type="logic">
+         <obj_property name="ElementShortName">hset_n</obj_property>
+         <obj_property name="ObjectShortName">hset_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/spram1_addr" type="array">
+         <obj_property name="ElementShortName">spram1_addr[8:0]</obj_property>
+         <obj_property name="ObjectShortName">spram1_addr[8:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/spram1_di" type="array">
+         <obj_property name="ElementShortName">spram1_di[3:0]</obj_property>
+         <obj_property name="ObjectShortName">spram1_di[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/spram1_do" type="array">
+         <obj_property name="ElementShortName">spram1_do[3:0]</obj_property>
+         <obj_property name="ObjectShortName">spram1_do[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/spram1_we" type="logic">
+         <obj_property name="ElementShortName">spram1_we</obj_property>
+         <obj_property name="ObjectShortName">spram1_we</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/spram2_addr" type="array">
+         <obj_property name="ElementShortName">spram2_addr[8:0]</obj_property>
+         <obj_property name="ObjectShortName">spram2_addr[8:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/spram2_di" type="array">
+         <obj_property name="ElementShortName">spram2_di[3:0]</obj_property>
+         <obj_property name="ObjectShortName">spram2_di[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/spram2_do" type="array">
+         <obj_property name="ElementShortName">spram2_do[3:0]</obj_property>
+         <obj_property name="ObjectShortName">spram2_do[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/spram2_we" type="logic">
+         <obj_property name="ElementShortName">spram2_we</obj_property>
+         <obj_property name="ObjectShortName">spram2_we</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spgraphx_addr" type="array">
+         <obj_property name="ElementShortName">spgraphx_addr[13:0]</obj_property>
+         <obj_property name="ObjectShortName">spgraphx_addr[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spgraphx_do" type="array">
+         <obj_property name="ElementShortName">spgraphx_do[7:0]</obj_property>
+         <obj_property name="ObjectShortName">spgraphx_do[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spgraphx_do_1" type="array">
+         <obj_property name="ElementShortName">spgraphx_do_1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">spgraphx_do_1[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spgraphx_do_2" type="array">
+         <obj_property name="ElementShortName">spgraphx_do_2[7:0]</obj_property>
+         <obj_property name="ObjectShortName">spgraphx_do_2[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spgraphx_do_3" type="array">
+         <obj_property name="ElementShortName">spgraphx_do_3[7:0]</obj_property>
+         <obj_property name="ObjectShortName">spgraphx_do_3[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spgraphx_do_4" type="array">
+         <obj_property name="ElementShortName">spgraphx_do_4[7:0]</obj_property>
+         <obj_property name="ObjectShortName">spgraphx_do_4[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/sprite_data_1" type="array">
+         <obj_property name="ElementShortName">sprite_data_1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sprite_data_1[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/sprite_data_2" type="array">
+         <obj_property name="ElementShortName">sprite_data_2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sprite_data_2[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/sprite_data" type="array">
+         <obj_property name="ElementShortName">sprite_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sprite_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/sptile_num" type="array">
+         <obj_property name="ElementShortName">sptile_num[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sptile_num[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spflips" type="array">
+         <obj_property name="ElementShortName">spflips[13:0]</obj_property>
+         <obj_property name="ObjectShortName">spflips[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spflip_2V" type="array">
+         <obj_property name="ElementShortName">spflip_2V[1:0]</obj_property>
+         <obj_property name="ObjectShortName">spflip_2V[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spflip_2H" type="array">
+         <obj_property name="ElementShortName">spflip_2H[1:0]</obj_property>
+         <obj_property name="ObjectShortName">spflip_2H[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spflip_H" type="logic">
+         <obj_property name="ElementShortName">spflip_H</obj_property>
+         <obj_property name="ObjectShortName">spflip_H</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spflip_V" type="logic">
+         <obj_property name="ElementShortName">spflip_V</obj_property>
+         <obj_property name="ObjectShortName">spflip_V</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group155" type="group">
+      <obj_property name="label">color_control</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group209" type="group">
+         <obj_property name="label">custom02</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/U5D/i_clr_n" type="logic">
+            <obj_property name="ElementShortName">i_clr_n</obj_property>
+            <obj_property name="ObjectShortName">i_clr_n</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/U5D/i_clk" type="logic">
+            <obj_property name="ElementShortName">i_clk</obj_property>
+            <obj_property name="ObjectShortName">i_clk</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/U5D/i_flip" type="logic">
+            <obj_property name="ElementShortName">i_flip</obj_property>
+            <obj_property name="ObjectShortName">i_flip</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/U5D/s_l_n" type="logic">
+            <obj_property name="ElementShortName">s_l_n</obj_property>
+            <obj_property name="ObjectShortName">s_l_n</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/U5D/i_data0" type="array">
+            <obj_property name="ElementShortName">i_data0[7:0]</obj_property>
+            <obj_property name="ObjectShortName">i_data0[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/U5D/i_data1" type="array">
+            <obj_property name="ElementShortName">i_data1[7:0]</obj_property>
+            <obj_property name="ObjectShortName">i_data1[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/U5D/o_Q01" type="logic">
+            <obj_property name="ElementShortName">o_Q01</obj_property>
+            <obj_property name="ObjectShortName">o_Q01</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/U5D/o_Q00" type="logic">
+            <obj_property name="ElementShortName">o_Q00</obj_property>
+            <obj_property name="ObjectShortName">o_Q00</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/U5D/o_Q11" type="logic">
+            <obj_property name="ElementShortName">o_Q11</obj_property>
+            <obj_property name="ObjectShortName">o_Q11</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/U5D/o_Q10" type="logic">
+            <obj_property name="ElementShortName">o_Q10</obj_property>
+            <obj_property name="ObjectShortName">o_Q10</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/U5D/i_mode" type="logic">
+            <obj_property name="ElementShortName">i_mode</obj_property>
+            <obj_property name="ObjectShortName">i_mode</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/U5D/LDEn" type="logic">
+            <obj_property name="ElementShortName">LDEn</obj_property>
+            <obj_property name="ObjectShortName">LDEn</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/U5D/r0" type="array">
+            <obj_property name="ElementShortName">r0[7:0]</obj_property>
+            <obj_property name="ObjectShortName">r0[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/U5D/r1" type="array">
+            <obj_property name="ElementShortName">r1[7:0]</obj_property>
+            <obj_property name="ObjectShortName">r1[7:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_rst_n" type="logic">
+         <obj_property name="ElementShortName">i_rst_n</obj_property>
+         <obj_property name="ObjectShortName">i_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_clk" type="logic">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_shift_load_n" type="logic">
+         <obj_property name="ElementShortName">i_shift_load_n</obj_property>
+         <obj_property name="ObjectShortName">i_shift_load_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_tile_bg_data" type="array">
+         <obj_property name="ElementShortName">i_tile_bg_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_tile_bg_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_flip" type="logic">
+         <obj_property name="ElementShortName">i_flip</obj_property>
+         <obj_property name="ObjectShortName">i_flip</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_flip_0" type="logic">
+         <obj_property name="ElementShortName">i_flip_0</obj_property>
+         <obj_property name="ObjectShortName">i_flip_0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_flip_1" type="logic">
+         <obj_property name="ElementShortName">i_flip_1</obj_property>
+         <obj_property name="ObjectShortName">i_flip_1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_flip_2" type="logic">
+         <obj_property name="ElementShortName">i_flip_2</obj_property>
+         <obj_property name="ObjectShortName">i_flip_2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_hflip_star" type="logic">
+         <obj_property name="ElementShortName">i_hflip_star</obj_property>
+         <obj_property name="ObjectShortName">i_hflip_star</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_vflip_star" type="logic">
+         <obj_property name="ElementShortName">i_vflip_star</obj_property>
+         <obj_property name="ObjectShortName">i_vflip_star</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_spvcnt" type="array">
+         <obj_property name="ElementShortName">i_spvcnt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">i_spvcnt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_sptile_num" type="array">
+         <obj_property name="ElementShortName">i_sptile_num[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_sptile_num[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/sptile_num" type="array">
+         <obj_property name="ElementShortName">sptile_num[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sptile_num[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/i_vset_n" type="logic">
+         <obj_property name="ElementShortName">i_vset_n</obj_property>
+         <obj_property name="ObjectShortName">i_vset_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/o_msc" type="array">
+         <obj_property name="ElementShortName">o_msc[1:0]</obj_property>
+         <obj_property name="ObjectShortName">o_msc[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/o_psc" type="array">
+         <obj_property name="ElementShortName">o_psc[1:0]</obj_property>
+         <obj_property name="ObjectShortName">o_psc[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spgraphx_addr" type="array">
+         <obj_property name="ElementShortName">spgraphx_addr[13:0]</obj_property>
+         <obj_property name="ObjectShortName">spgraphx_addr[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/sprite_data_1" type="array">
+         <obj_property name="ElementShortName">sprite_data_1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sprite_data_1[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/sprite_data_2" type="array">
+         <obj_property name="ElementShortName">sprite_data_2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sprite_data_2[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spgraphx_do_1" type="array">
+         <obj_property name="ElementShortName">spgraphx_do_1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">spgraphx_do_1[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spgraphx_do_2" type="array">
+         <obj_property name="ElementShortName">spgraphx_do_2[7:0]</obj_property>
+         <obj_property name="ObjectShortName">spgraphx_do_2[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spgraphx_do_3" type="array">
+         <obj_property name="ElementShortName">spgraphx_do_3[7:0]</obj_property>
+         <obj_property name="ObjectShortName">spgraphx_do_3[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spgraphx_do_4" type="array">
+         <obj_property name="ElementShortName">spgraphx_do_4[7:0]</obj_property>
+         <obj_property name="ObjectShortName">spgraphx_do_4[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spgraphx_do" type="array">
+         <obj_property name="ElementShortName">spgraphx_do[7:0]</obj_property>
+         <obj_property name="ObjectShortName">spgraphx_do[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/sprite_data" type="array">
+         <obj_property name="ElementShortName">sprite_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sprite_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/sptile_num" type="array">
+         <obj_property name="ElementShortName">sptile_num[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sptile_num[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spflips" type="array">
+         <obj_property name="ElementShortName">spflips[13:0]</obj_property>
+         <obj_property name="ObjectShortName">spflips[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spflip_2V" type="array">
+         <obj_property name="ElementShortName">spflip_2V[1:0]</obj_property>
+         <obj_property name="ObjectShortName">spflip_2V[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spflip_2H" type="array">
+         <obj_property name="ElementShortName">spflip_2H[1:0]</obj_property>
+         <obj_property name="ObjectShortName">spflip_2H[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spflip_H" type="logic">
+         <obj_property name="ElementShortName">spflip_H</obj_property>
+         <obj_property name="ObjectShortName">spflip_H</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/spflip_V" type="logic">
+         <obj_property name="ElementShortName">spflip_V</obj_property>
+         <obj_property name="ObjectShortName">spflip_V</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group1168" type="group">
+      <obj_property name="label">VGA controller</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/i_reset" type="logic">
+         <obj_property name="ElementShortName">i_reset</obj_property>
+         <obj_property name="ObjectShortName">i_reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/i_clk" type="logic">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/i_vga_clk" type="logic">
+         <obj_property name="ElementShortName">i_vga_clk</obj_property>
+         <obj_property name="ObjectShortName">i_vga_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/i_pixel_write" type="logic">
+         <obj_property name="ElementShortName">i_pixel_write</obj_property>
+         <obj_property name="ObjectShortName">i_pixel_write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/i_vblank" type="logic">
+         <obj_property name="ElementShortName">i_vblank</obj_property>
+         <obj_property name="ObjectShortName">i_vblank</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/i_hblank" type="logic">
+         <obj_property name="ElementShortName">i_hblank</obj_property>
+         <obj_property name="ObjectShortName">i_hblank</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/i_rgb" type="array">
+         <obj_property name="ElementShortName">i_rgb[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_rgb[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/o_hsync" type="logic">
+         <obj_property name="ElementShortName">o_hsync</obj_property>
+         <obj_property name="ObjectShortName">o_hsync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/o_vsync" type="logic">
+         <obj_property name="ElementShortName">o_vsync</obj_property>
+         <obj_property name="ObjectShortName">o_vsync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/o_csync" type="logic">
+         <obj_property name="ElementShortName">o_csync</obj_property>
+         <obj_property name="ObjectShortName">o_csync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/o_blank" type="logic">
+         <obj_property name="ElementShortName">o_blank</obj_property>
+         <obj_property name="ObjectShortName">o_blank</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/o_vga_control_init_done" type="logic">
+         <obj_property name="ElementShortName">o_vga_control_init_done</obj_property>
+         <obj_property name="ObjectShortName">o_vga_control_init_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/o_r" type="array">
+         <obj_property name="ElementShortName">o_r[2:0]</obj_property>
+         <obj_property name="ObjectShortName">o_r[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/o_g" type="array">
+         <obj_property name="ElementShortName">o_g[2:0]</obj_property>
+         <obj_property name="ObjectShortName">o_g[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/o_b" type="array">
+         <obj_property name="ElementShortName">o_b[2:0]</obj_property>
+         <obj_property name="ObjectShortName">o_b[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/state" type="other">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/video_mem_addr" type="array">
+         <obj_property name="ElementShortName">video_mem_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">video_mem_addr[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/video_mem_data" type="array">
+         <obj_property name="ElementShortName">video_mem_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">video_mem_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/video_dpram_vga_core_addr_l" type="array">
+         <obj_property name="ElementShortName">video_dpram_vga_core_addr_l[31:0]</obj_property>
+         <obj_property name="ObjectShortName">video_dpram_vga_core_addr_l[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/video_dpram_vga_core_addr" type="array">
+         <obj_property name="ElementShortName">video_dpram_vga_core_addr[14:0]</obj_property>
+         <obj_property name="ObjectShortName">video_dpram_vga_core_addr[14:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/video_mem_vga_core_data" type="array">
+         <obj_property name="ElementShortName">video_mem_vga_core_data[15:0]</obj_property>
+         <obj_property name="ObjectShortName">video_mem_vga_core_data[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/vga_addr_even_line_start" type="array">
+         <obj_property name="ElementShortName">vga_addr_even_line_start[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vga_addr_even_line_start[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/vga_frame_offset" type="array">
+         <obj_property name="ElementShortName">vga_frame_offset[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vga_frame_offset[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/vga_adr" type="array">
+         <obj_property name="ElementShortName">vga_adr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vga_adr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/vga_dat" type="array">
+         <obj_property name="ElementShortName">vga_dat[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vga_dat[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/s_cyc_o" type="logic">
+         <obj_property name="ElementShortName">s_cyc_o</obj_property>
+         <obj_property name="ObjectShortName">s_cyc_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/s_we_o" type="logic">
+         <obj_property name="ElementShortName">s_we_o</obj_property>
+         <obj_property name="ObjectShortName">s_we_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/s_adr_o" type="array">
+         <obj_property name="ElementShortName">s_adr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_adr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/s_dat_o" type="array">
+         <obj_property name="ElementShortName">s_dat_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_dat_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/s_sel_o" type="array">
+         <obj_property name="ElementShortName">s_sel_o[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s_sel_o[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/s_ack_i" type="logic">
+         <obj_property name="ElementShortName">s_ack_i</obj_property>
+         <obj_property name="ObjectShortName">s_ack_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/digdug_sim/core_top_0/u_vga_ctrl/s_stb_vga_o" type="logic">
+         <obj_property name="ElementShortName">s_stb_vga_o</obj_property>
+         <obj_property name="ObjectShortName">s_stb_vga_o</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
