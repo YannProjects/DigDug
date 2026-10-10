@@ -12,19 +12,19 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="22,061,356.111 ns"></ZoomStartTime>
-      <ZoomEndTime time="22,069,326.112 ns"></ZoomEndTime>
-      <Cursor1Time time="22,062,689.444 ns"></Cursor1Time>
+      <ZoomStartTime time="18,935,548.611 ns"></ZoomStartTime>
+      <ZoomEndTime time="18,943,393.612 ns"></ZoomEndTime>
+      <Cursor1Time time="18,938,189.444 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="176"></NameColumnWidth>
+      <NameColumnWidth column_width="201"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="26" />
    <wave_markers>
-      <marker time="19500300555" label="" />
-      <marker time="19441692777" label="" />
-      <marker time="22126856111" label="" />
+      <marker time="18488189444" label="" />
+      <marker time="18980856111" label="" />
+      <marker time="18936856111" label="" />
    </wave_markers>
    <wvobject fp_name="/digdug_sim/core_top_0/i_rst_sysn" type="logic">
       <obj_property name="ElementShortName">i_rst_sysn</obj_property>
@@ -500,6 +500,7 @@
    <wvobject fp_name="group50" type="group">
       <obj_property name="label">pf_gen</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_clk" type="logic">
          <obj_property name="ElementShortName">i_clk</obj_property>
          <obj_property name="ObjectShortName">i_clk</obj_property>
@@ -582,9 +583,55 @@
          <obj_property name="ElementShortName">bg_color_bank[1:0]</obj_property>
          <obj_property name="ObjectShortName">bg_color_bank[1:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/bg_select" type="array">
-         <obj_property name="ElementShortName">bg_select[1:0]</obj_property>
-         <obj_property name="ObjectShortName">bg_select[1:0]</obj_property>
+      <wvobject fp_name="vbus337" type="vbus">
+         <obj_property name="label">a_9N</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/bg_select" type="array">
+            <obj_property name="ElementShortName">bg_select[1:0]</obj_property>
+            <obj_property name="ObjectShortName">bg_select[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_pa[9]" type="logic">
+            <obj_property name="ElementShortName">[9]</obj_property>
+            <obj_property name="ObjectShortName">[9]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_pa[8]" type="logic">
+            <obj_property name="ElementShortName">[8]</obj_property>
+            <obj_property name="ObjectShortName">[8]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_pa[7]" type="logic">
+            <obj_property name="ElementShortName">[7]</obj_property>
+            <obj_property name="ObjectShortName">[7]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_pa[6]" type="logic">
+            <obj_property name="ElementShortName">[6]</obj_property>
+            <obj_property name="ObjectShortName">[6]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_pa[5]" type="logic">
+            <obj_property name="ElementShortName">[5]</obj_property>
+            <obj_property name="ObjectShortName">[5]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_pa[4]" type="logic">
+            <obj_property name="ElementShortName">[4]</obj_property>
+            <obj_property name="ObjectShortName">[4]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_pa[3]" type="logic">
+            <obj_property name="ElementShortName">[3]</obj_property>
+            <obj_property name="ObjectShortName">[3]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_pa[2]" type="logic">
+            <obj_property name="ElementShortName">[2]</obj_property>
+            <obj_property name="ObjectShortName">[2]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_pa[1]" type="logic">
+            <obj_property name="ElementShortName">[1]</obj_property>
+            <obj_property name="ObjectShortName">[1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/i_pa[0]" type="logic">
+            <obj_property name="ElementShortName">[0]</obj_property>
+            <obj_property name="ObjectShortName">[0]</obj_property>
+         </wvobject>
       </wvobject>
       <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/playfield_gen/bg_data" type="array">
          <obj_property name="ElementShortName">bg_data[7:0]</obj_property>
@@ -666,11 +713,9 @@
    <wvobject fp_name="group82" type="group">
       <obj_property name="label">sprites_gen</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="group187" type="group">
          <obj_property name="label">custom04</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/sprites_gen/U9K/i_rst_n" type="logic">
             <obj_property name="ElementShortName">i_rst_n</obj_property>
             <obj_property name="ObjectShortName">i_rst_n</obj_property>
@@ -1060,9 +1105,11 @@
    <wvobject fp_name="group155" type="group">
       <obj_property name="label">color_control</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="group209" type="group">
          <obj_property name="label">custom02</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/digdug_sim/core_top_0/digdug_core/color_control/U5D/i_clr_n" type="logic">
             <obj_property name="ElementShortName">i_clr_n</obj_property>
             <obj_property name="ObjectShortName">i_clr_n</obj_property>

@@ -79,7 +79,8 @@ begin
         end if;
     end process;
         
-    -- VSET sur la premiere periode de 2H (filtre avec les etats de la machine d'etat)
+    -- VSET 
+    -- Signal periodique qui est valide sur la premiere periode de 2H (filtre avec les etats de la machine d'etat)
     process (i_clk)
     begin
         if rising_edge(i_clk) then
@@ -91,7 +92,8 @@ begin
         end if;
     end process;
 
-    -- HSET sur la seconde periode de 2H (filtre avec les etats de la machine d'etat)
+    -- HSET
+    -- Signal periodique qui est valide sur la premiere periode de 2H (filtre avec les etats de la machine d'etat)
     process (i_clk)
     begin
         if rising_edge(i_clk) then
@@ -106,7 +108,6 @@ begin
     process (i_clk)
     begin
         -- !!! Zone de fin de ligne horizontale => A verifier !!!
-        -- if i_h = std_logic_vector(STANDBY_PH) then
         -- Debut du traitement des sprites quand HSYNCn = 0 ???
         if i_rst_n = '0' or (i_hpos = std_logic_vector(PH_ABORT) and (i_256h = '1')) then
             sprite_num <= (others => '0');
@@ -129,6 +130,10 @@ begin
                         end if;	                    
                     end if;
                
+               -- La recuperation des donnees des sprites est repartie sur 3 cyclde 4H
+               -- 1. Match de la ligne
+               -- 2. Recuperation de la couleur (VSETn)
+               -- 3. Recuperation de la position horizontale (HSETn)
                when WAIT_FOR_NEXT_CYCLE =>
                     if i_hpos(1 downto 0) = "01" then
                         sprite_state <= GET_SPRITE_DATA;        
@@ -145,6 +150,10 @@ begin
                -- Attente d'un cycle (2H) supplementaire pour tenir compte du decalage
                -- du rechargement du registre a decalage custom02
                when WAIT_FOR_FILL_LINE_BUFFER =>
+                    -- Les donnees du sprite sont latches dans le registre a decalage avec i_shift_load_n de custom02 à la fin du cycle 4H
+                    -- flipcnt est utilise pour anticiper ca et avoir des valeurs de flipxxx a jour pour construire les adresses des donnees des srpites
+                    -- et latcher la bonne valeur des donnees du sprite.
+                    -- (ex.: 0x302, 0x30A, 0x312, 0x31A)
                     flipcnt <= flipcnt + 1;
                     if i_hpos(1 downto 0) = "11" then 
                         sprite_state  <= FILL_LINE_BUFFER;

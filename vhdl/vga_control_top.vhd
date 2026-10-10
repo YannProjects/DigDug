@@ -205,7 +205,7 @@ architecture Behavioral of vga_control_top is
         -- => active time = 448 lignes (2 x 224)
         -- => back porch = 30
         -- => front porch = 600 - (2+30+448) = 120 lignes
-        (VTIM_REG_ADDR,x"013001BF", '0'), --   program vertical timing register
+        (VTIM_REG_ADDR,x"013801BF", '0'), --   program vertical timing register
         (HVLEN_REG_ADDR,x"031F020B", '0'), --   program horizontal/vertical length register (800 x 525).
         
         -- Table de conversion des niveaux RGB en sortie des ROMs 2E/2F sour la forme de 3 bits rouge,
@@ -214,28 +214,28 @@ architecture Behavioral of vga_control_top is
         -- e.g.: R = 7 (b111), V = 7 (b111), B = 0 (b00), donne l'index 11111100 = 0xFC => x 4 (alignement sur 32 bits) + 0x800 (offset LUTE0) = 0xBF0 
         -- => Valeur RGB 24 bits = 0x00E0E000
         (X"00000800", x"00000000", '0'),
-        (X"000008BC", x"0000B6FF", '0'),
-        (X"00000BD8", x"00FFDBDB", '0'),
-        (X"00000878", x"00006DDB", '0'),
+        (X"00000810", x"00920000", '0'),
+        (X"0000081C", x"00FF0000", '0'),
+        (X"00000828", x"00492400", '0'),
+        (X"00000834", x"00B62400", '0'),
+        (X"00000850", x"00924900", '0'),
+        (X"00000878", x"00DB6D00", '0'),
+        (X"0000087C", x"00FF6D00", '0'),
         (X"000008A0", x"0000B600", '0'),
-        (X"00000834", x"000024B6", '0'),
-        (X"000008D8", x"0000DBDB", '0'),
-        (X"00000810", x"00000092", '0'),
-        (X"00000A00", x"00AA0000", '0'),
-        (X"0000096C", x"00556D6D", '0'),
-        (X"0000081C", x"000000FF", '0'),
-        (X"00000A90", x"00AA9292", '0'),
-        (X"00000948", x"00554949", '0'),
-        (X"00000968", x"00556D49", '0'),
-        (X"00000994", x"005592B6", '0'),
-        (X"00000BA0", x"00FFB600", '0'),
-        (X"0000087C", x"00006DFF", '0'),
-        (X"00000850", x"00004992", '0'),
-        (X"00000828", x"00002449", '0'),
+        (X"000008BC", x"00FFB600", '0'),
+        (X"000008D8", x"00DBDB00", '0'),
+        (X"00000948", x"00494955", '0'),
+        (X"00000968", x"00496D55", '0'),
+        (X"0000096C", x"006D6D55", '0'),
+        (X"00000994", x"00B69255", '0'),
+        (X"00000A00", x"000000AA", '0'),
+        (X"00000A10", x"009200AA", '0'),
+        (X"00000A90", x"009292AA", '0'),
+        (X"00000B40", x"000049FF", '0'),
+        (X"00000B60", x"00006DFF", '0'),
         (X"00000B7C", x"00FF6DFF", '0'),
-        (X"00000B60", x"00FF6D00", '0'),
-        (X"00000B40", x"00FF4900", '0'),
-        (X"00000A10", x"00AA0092", '0'),
+        (X"00000BA0", x"0000B6FF", '0'),
+        (X"00000BD8", x"00DBDBFF", '0'),
         (CTRL_REG_ADDR, x"00000901", '0'), --   program control register (VEN=1 (video enabled), PC=1 (pseudo-color), CD=11 (32 bits))                                                
         -- end list
         (x"00000000",x"00000000", '1')  -- stop testbench
