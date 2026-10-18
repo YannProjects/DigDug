@@ -87,8 +87,8 @@ signal flip : std_logic_vector(2 downto 0);
 signal objram_di, posram_di, objram_do, posram_do, flpram_di, flpram_do : std_logic_vector(7 downto 0);
 signal sprite_line : unsigned(7 downto 0);
 signal spram1_do, spram2_do : std_logic_vector(3 downto 0);
-signal spram1_addr, spram2_addr : unsigned(8 downto 0);
-signal spram1_addr_std, spram2_addr_std : std_logic_vector(8 downto 0);
+signal spram1_addr, spram2_addr : unsigned(7 downto 0);
+signal spram1_addr_std, spram2_addr_std : std_logic_vector(7 downto 0);
 signal mora_cus_04 : std_logic_vector(6 downto 0);
 signal mora : std_logic_vector(9 downto 0);
 signal spdata : std_logic_vector(3 downto 0);
@@ -193,12 +193,13 @@ begin
     U3FH : process (i_sprite_gen_clk)
     begin
         if (i_rst_n = '0' or i_hsync_n = '0') then
-            spram1_addr <= (others => '0');
+            -- spram1_addr <= (others => '0');
+            spram1_addr <= X"00";
         elsif rising_edge(i_sprite_gen_clk) then
             -- Compteur reload 1V
             if (hset_n = '0' and i_v(0) = '0') then
-                spram1_addr <= unsigned('0' & posram_do);
-            elsif spram1_addr < END_OF_LINE_BUFFER then
+                spram1_addr <= unsigned(posram_do);
+            else
                 spram1_addr <= spram1_addr + 1;
             end if;
         end if;
@@ -208,12 +209,12 @@ begin
     U4FN : process (i_sprite_gen_clk)
     begin
         if (i_rst_n = '0' or i_hsync_n = '0') then
-            spram2_addr <= (others => '0');
+            spram2_addr <= X"00";
         elsif rising_edge(i_sprite_gen_clk) then 
             -- Compteur reload 1V
             if (hset_n = '0' and i_v(0) = '1') then
-                spram2_addr <= unsigned('0' & posram_do);
-            elsif spram2_addr < END_OF_LINE_BUFFER then
+                spram2_addr <= unsigned(posram_do);
+            else
                 spram2_addr <= spram2_addr + 1;
             end if;
         end if;
@@ -227,8 +228,15 @@ begin
     mux_4M_b <= i_sprite_gen_clk & line_buffer_wr & i_256h & '0';
     mux_4m_out <= mux_4M_a when i_v(0) = '0' else mux_4M_b;
     -- Ecriture sur niveau haut
-    spram1_we <= not mux_4m_out(3);
-    spram2_we <= not mux_4m_out(2);
+    -- mux_4m_out(0), mux_4m_out(1) servent a emuler les CSn de 3G et 4H
+    -- L'ecriture dans les line buffer ne doivent demarre qu'a partir du VBLANK et H256 est 
+    -- utiliser pour mesquer les ecritures.
+    -- Aussi, l'adresse d'ecriture commence a 0x30 lors de la fin du VBLK, passe par 0xFF, revient à 0
+    -- et completer les pixels de sprites en 0x00 et 0X2F.
+    -- Par exemple le pixel horitzontal a l'adresse 7 du buffer de ligne se situe vers la fin de la ligne
+    -- (apres le retrou a 0 du compteur du buffer ligne)
+    spram1_we <= not mux_4m_out(3) and not mux_4m_out(1);
+    spram2_we <= not mux_4m_out(2) and not mux_4m_out(0);
     
     -- U2H/J
     U2HJ : process(i_sprite_gen_clk)

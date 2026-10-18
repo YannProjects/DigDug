@@ -31,12 +31,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-
-
 entity digdug_main is
 Port (
-    i_rst_sysn : in std_logic;
-    i_clk_artyx7 : in std_logic;
+    i_rst_sysn      : in std_logic;
+    i_clk_artyx7    : in std_logic;
+    -- i_sync_bus_ab   : in std_logic_vector(15 downto 0); -- Adress bus custom 08
+    -- i_sync_bus_clk  : in std_logic; -- custom 08 CLK
+    -- i_sync_bus_rw_n : in std_logic; -- custom 08 R/Wn
+    -- i_sync_bus_db   : in std_logic_vector(7 downto 0); -- Synced data bus custom 08
+    -- o_sync_bus_db   : out std_logic_vector(7 downto 0); -- Synced data bus custom 08
     
     -- VGA
     o_hsync       : out std_logic;
@@ -85,6 +88,18 @@ begin
         i_core_rst_n => core_rst_n,
         i_clk => digdug_clk,
         i_clk_3x => digdug_clk_3x,
+        -- !!! Les signaux de R/Wn, CLK, data sont ceux du bus controller custom 08 !!!
+        -- C'est l'interface entre les Z80 et les parties video/audio/I/O,...
+        -- i_sb_clk => i_sync_bus_clk,
+        i_sb_clk => '0',
+        -- i_sb_ab => i_sync_bus_ab,
+        i_sb_ab => (others => '0'),
+        -- i_sb_rw_n => i_sync_bus_rw_n,
+        i_sb_rw_n => '1',
+        -- i_sb_db => i_sync_bus_db,
+        i_sb_db => (others => '0'),
+        -- o_sb_db => o_sync_bus_db,
+        o_sb_db => open,
 
         o_vblank_core => core_vblk,
         o_hblank_core => core_hblk,

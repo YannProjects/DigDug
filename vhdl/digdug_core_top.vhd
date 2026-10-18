@@ -119,10 +119,18 @@ use IEEE.NUMERIC_STD.ALL;
 entity digdug_core_top is
     port (
         -- System clock
+        i_core_rst_n             : in std_logic;
         i_clk                    : in std_logic; -- 6 MHz
         i_clk_3x                 : in std_logic; -- 18 MHz
-        i_core_rst_n             : in std_logic;
+        i_sb_clk                 : in std_logic; -- custom 08 CLK
+        i_sb_ab                  : in std_logic_vector(15 downto 0); -- custom 08 AB
+        i_sb_db                  : in std_logic_vector(7 downto 0); -- custom 08 DB
+        o_sb_db                  : out std_logic_vector(7 downto 0); -- custom 08 DB
+        i_sb_rw_n                : in std_logic; -- custom 08 R/Wn (IOR/Wn sur le schema DigDug implementation)
+        o_secondary_cpus_reset   : out std_logic; -- Reset 2nd et 3rd priority CPUs
         
+        o_irq_1_n                : out std_logic;
+        o_irq_2_n                : out std_logic;
         o_hblank_core            : out std_logic;
         o_vblank_core            : out std_logic;
         o_rgb_core               : out std_logic_vector(7 downto 0)
@@ -142,6 +150,10 @@ signal spvcnt : unsigned(4 downto 0);
 signal mobj, pf, final_color_sel, final_color : std_logic_vector(3 downto 0);
 signal final_color_reg : std_logic_vector(5 downto 0);
 signal msc, psc : std_logic_vector(1 downto 0);
+signal enable_3bc, io_customs, audio_0_n, audio_1_n, nmi_on_n : std_logic;
+signal watchdog_n, mod_latch_n, irq_1_clr_n, irq_2_clr_n : std_logic;
+signal vblk_irq1_0, vblk_irq1_1, vblk_irq2_0, vblk_irq2_1 : std_logic;
+signal mod_latch : std_logic_vector(2 downto 0);
 
 begin
 
@@ -190,7 +202,7 @@ begin
         i_hpos => hpos,
         i_vpos => vpos,
         i_ram0_csn => '1',
-        i_br_wn => '1',
+        i_br_wn => '1', -- sync bus R/!W
         i_portn => '1',
         -- Vient a priori des 2 bits de poids faible du registre a decalage 5D PSC0/PSC1 (TBC)
         i_psc => psc
@@ -208,7 +220,7 @@ begin
         i_msc => msc,
         i_flip => '0',
         i_hsync_n => hsync_n,
-        i_br_w_n => '1',
+        i_br_w_n => '1', -- sync bus R/!W
         o_mobj => mobj,
         -- o_db => 
         o_spvcnt => spvcnt,
@@ -308,5 +320,128 @@ begin
     
     -- U4R : Reload shift register
     shift_load_n <= not (hpos(0) and hpos(1));
+    
+    ------------------------
+    -- Address decoder
+    ------------------------
+    U2G_H : process(i_clk_3x)
+    begin
+        if rising_edge(i_clk_3x) then
+            enable_3bc <= '1';
+            io_customs <= '1';
+            if i_sb_clk = '0' then
+                if i_sb_ab(15 downto 11) = "01101" then
+                    enable_3bc <= '0';
+                elsif i_sb_ab(15 downto 11) = "011010" then
+                    io_customs <= '0';
+                end if;
+            end if;
+        end if;
+    end process;
+    
+    U3B_C : process(i_clk_3x)
+    begin
+        if rising_edge(i_clk_3x) then
+            audio_0_n <= '1';
+            audio_1_n <= '1';
+            watchdog_n <= '1';
+            mod_latch_n <= '1';
+            if i_sb_rw_n = '0' and enable_3bc = '0' then
+                case i_sb_ab(5 downto 4) is
+                    when "00" => 
+                        audio_0_n <= '0';
+                    when "01" =>
+                        audio_1_n <= '0';
+                    when "10" =>
+                        mod_latch_n <= '0';
+                    when "11" =>
+                        watchdog_n <= '0';
+                    when others => 
+                end case;
+            end if;
+        end if;
+    end process;
+
+    U1G_H : process(i_clk_3x)
+    begin
+        if rising_edge(i_clk_3x) then
+            if mod_latch_n = '0' then
+                case i_sb_ab(2 downto 0) is
+                    when "000" => 
+                        irq_1_clr_n <= i_sb_db(0);
+                    when "001" =>
+                        irq_2_clr_n <= i_sb_db(0);
+                    when "010" =>
+                        nmi_on_n <= i_sb_db(0);
+                    when "011" =>
+                        o_secondary_cpus_reset <= i_sb_db(0);
+                    when "101" =>
+                        mod_latch(0) <= i_sb_db(0);
+                    when "110" =>
+                        mod_latch(1) <= i_sb_db(0);
+                    when "111" =>
+                        mod_latch(2) <= i_sb_db(0);
+                    when others => 
+                end case;
+            end if;
+        end if;
+    end process;
+    
+    -- IRQ1n
+    U1J_K_1 : process(i_clk_3x)
+    begin
+        if irq_1_clr_n = '0' then
+            o_irq_1_n <= '1';
+        elsif rising_edge(i_clk_3x) then
+            vblk_irq1_0 <= vblank;
+            vblk_irq1_1 <= vblk_irq1_0;
+            -- Falling edge VBLANK
+            if (vblk_irq1_1 = '1' and vblk_irq1_0 = '0') then
+                o_irq_1_n <= '0';
+            end if;
+        end if;
+    end process;
+
+    -- IRQ2n
+    U1J_K_2 : process(i_clk_3x)
+    begin
+        if irq_2_clr_n = '0' then
+            o_irq_2_n <= '1';
+        elsif rising_edge(i_clk_3x) then
+            vblk_irq2_0 <= vblank;
+            vblk_irq2_1 <= vblk_irq2_0;
+            -- Falling edge VBLANK
+            if (vblk_irq2_1 = '1' and vblk_irq2_0 = '0') then
+                o_irq_2_n <= '0';
+            end if;
+        end if;
+    end process;
+   
+    -----------------------------------------------    
+    -- Switch input, Coin door, Control panel
+    -----------------------------------------------
+    UIO : entity work.input_coin_door_control_panel
+    port map (
+        i_clk => i_clk,
+        i_reset_n => i_core_rst_n,
+        i_hpos => hpos,
+        i_vblk => not vblank,
+        i_mod => mod_latch,
+        i_ctrl_data => i_sb_ab(8),
+        i_cpu_r_w_n => i_sb_rw_n,
+        i_db => i_sb_db,
+        o_db => o_sb_db,
+        o_nmi_1 => open,
+        i_ioen => hpos(1), -- CLK => 2H
+        i_controls => (others => '1'),
+        i_dip_sw_1 => (others => '1'),
+        i_dip_sw_2 => (others => '1'),
+        i_cocktail => '0',
+        o_coin_lock => open,
+        o_led_1 => open,
+        o_led_2 => open,
+        o_coin_cntr_1 => open,
+        o_coin_cntr_2 => open
+    );
 
 end Behavioral;

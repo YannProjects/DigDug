@@ -132,7 +132,11 @@ begin
 	
 	-- Les noms viennent du core MiSTER DIGDUG en Verilog
 	-- bg_select <= Q_5MN(1 downto 0);
-	bg_select <= "01";
+	-- 00 => Degradé sable
+	-- 01 => Degradé plein
+	-- 10 => Mire noir & blanc
+	-- 11 => Pas de fond ?
+	bg_select <= "00";
 	-- fg_color_mode <= Q_5MN(2);
 	fg_color_mode <= '1';
 	-- bg_cutoff <= Q_5MN(3);
